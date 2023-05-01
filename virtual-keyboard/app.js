@@ -46,7 +46,7 @@ document.onkeypress = function (event) {
 document.querySelectorAll("#content .mainKey").forEach(function (element) {
   element.onclick = function (event) {
     document.querySelectorAll("#content .mainKey").forEach(function (element) {
-      element.classList.remove("active");
+      element.classList.remove('active');
     });
     let code = this.getAttribute('data');
     this.classList.add('active');
