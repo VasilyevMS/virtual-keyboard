@@ -34,5 +34,7 @@ textarea {
 }
 
 .active {
-  color: lightgreen;
+  background: lightgreen;
+  box-shadow: 5px solid darkgray;
+  transition: 500ms;
 }

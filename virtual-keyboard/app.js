@@ -24,7 +24,12 @@ function init() {
     if (index == 12 || index == 24) {
       key += '<div class="newString"></div>';
     }
-    key += '<div class="mainKey">' + String.fromCharCode(mainKeys[index]) + '</div>';
+    key +=
+      '<div class="mainKey" data="' +
+      mainKeys[index] +
+      '">' +
+      String.fromCharCode(mainKeys[index]) +
+      "</div>";
   }
   document.querySelector('#content').innerHTML = key;
 }
