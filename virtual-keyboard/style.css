@@ -1,0 +1,35 @@
+textarea {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#content {
+  display: block;
+  border: 2px solid darkgray;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+#content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mainKey {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+}
+
+.newString {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
