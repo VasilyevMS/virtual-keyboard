@@ -36,5 +36,5 @@ textarea {
 .active {
   background: lightgreen;
   box-shadow: 5px solid darkgray;
-  transition: 500ms;
+  transition: ease-in-out 500ms;
 }
