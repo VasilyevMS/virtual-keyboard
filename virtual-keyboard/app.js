@@ -30,3 +30,23 @@ function init() {
 }
 
 init();
+
+document.onkeypress = function (event) {
+  console.log(event.code);
+  console.log(event.keyCode);
+  document.querySelectorAll('#content .mainKey').forEach(function (element) {
+    element.classList.remove('active');
+  })
+  document.querySelector('#content .mainKey[data="' + event.keyCode + '"]').classList.add('active');
+}
+
+document.querySelectorAll("#content .mainKey").forEach(function (element) {
+  element.onclick = function (event) {
+    document.querySelectorAll("#content .mainKey").forEach(function (element) {
+      element.classList.remove("active");
+    });
+    let code = this.getAttribute('data');
+    this.classList.add('active');
+    console.log(code);
+  }
+});
